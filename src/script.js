@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function(){
     if(themeText.textContent == 'LIGHT'){
       input.style.color = "white";
     }else{
-      input.style.color = "gray";s
+      input.style.color = "gray";
     }
 
     input.style.textAlign = "left";
