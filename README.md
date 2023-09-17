@@ -38,7 +38,7 @@ Users should be able to:
 - Desktop
 
 ![Light](./Screenshots/Desktop-Light.png)
-![Dark](./Screenshorts/Desktop.png)
+![Dark](./Screenshots/Desktop.png)
 
 - Tablet
 
@@ -63,7 +63,7 @@ When user submits it username, async function fetchUser(username) will fetch the
  
 For example -> userData.name, userData.followers etc
 
-sync function fetchUser(username){
+async function fetchUser(username){
     fetch(`https://api.github.com/users/${username}`)
     .then((response) => {
 
