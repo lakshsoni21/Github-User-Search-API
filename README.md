@@ -85,14 +85,14 @@ async function fetchUser(username){
 
 ### Links
 
-- Solution URL: [Explore the GitHub Repository](https://github.com/Kunalshakya/GitHub-User-Search-App)
-- Live Site URL: [ View the live website](https://kunalshakya.github.io/GitHub-User-Search-App/)
+- Solution URL: [GitHub Repository](https://github.com/lakshsoni21/Github-User-Search-API)
+- Live Site URL: [Live website](https://github-user-searchapp.netlify.app)
 
 ## Author
 
-- GitHub - [@Kunalshakay](https://github.com/Kunalshakya)
-- LinkedIn - [@kunal-shakya](https://www.linkedin.com/in/kunal-shakya-59323a259/)
-- Frontend Mentor - [@Kunalshakya](https://www.frontendmentor.io/profile/Kunalshakya)
+- GitHub - [@lakshsoni21](https://github.com/lakshsoni21/)
+- LinkedIn - [@laksh-soni](https://www.linkedin.com/in/laksh-soni-432566175)
+- Twitter - [@LakshSoni18](https://twitter.com/LakshSoni18)
 
 ## Acknowledgments
 
