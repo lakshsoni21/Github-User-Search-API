@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+
+    /* LIGHT */
+    .light.main, .light.search, .light.search > input, .light.content, .light#publicData{
+        background-color: #fff;
+    }
+
+    .light.search > input::placeholder,.light.search > input, .light#joined, .light#bio, .light.publicHeadings, .light.socials{
+        color: gray;
+        font-weight: 500;
+    }
+
+    .light#name, .light#repo, .light#followers, .light#following, .light#heading{
+        color: black;
+    }
+
+    .light.search{
+        box-shadow: 0px 12px 40px 7px rgba(128, 128, 128, 0.494);
+    }
+
+    .light.content{
+        box-shadow: 0px 20px 40px 4px rgba(128, 128, 128, 0.494);
+    }
+
+    /* DARK */
+    .dark.main, .dark#publicData{
+        background-color: hsl(220, 40%, 13%);
+    }
+
+    .dark.search, .dark.content{
+        background-color: hsl(222, 41%, 20%);
+    }
+
+    .dark.search > input::placeholder, .dark#name, .darkt#repo, .dark#followers, .dark#following, .dark#joined, .dark#bio, .dark.publicHeadings, .dark.socials, .dark#heading{
+        color: white;
+    }
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+  <title>Frontend Mentor | GitHub user search app</title>
+
+  <!--google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <!--google font end -->
+
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./script.js" type="module"></script>
+
+</head>
+<body style="font-family: 'Space Mono', monospace;" class="text-white">
+
+  <!-- MAIN BODY -->
+
+  <div class="main dark bg-Verydarkbluedarker h-screen w-screen overflow-auto sm:flex sm:flex-col justify-center items-center">
+
+    <!-- Container -->
+    <div class="container px-5 py-9 sm:h-5/6 sm:w-[90%] md:h-3/4  lg:w-[72%] xl:w-3/6">
+
+      <!-- HEADER -->
+      <div class="header flex justify-between font-bold">
+        <h2 class="text-3xl dark" id="heading">devfinder</h2>
+        <div class="text-lg flex gap-5">
+          <button id="themeButton"><h3 class="self-center" id="theme">LIGHT</h3></button>
+          <img src="./assets/icon-sun.svg" alt="" class="h-full w-full" id="themeIcon">
+        </div>
+      </div>
+
+      <!-- SEARCH DIV -->
+      <div class="search dark bg-Darkbluedarker flex justify-between mt-12 h-15 items-center p-2 rounded-xl sm:gap-5 xl:h-20 xl:px-5">
+
+        <img src="./assets/icon-search.svg" class="h-7 xl:h-8">
+
+        <input type="text" id="username" placeholder="Search Github username" class="bg-Darkbluedarker dark placeholder:text-White placeholder:font-extralight text-sm border-none outline-none sm:w-full sm:justify-self-start xl:text-xl">
+        <button class="bg-Blue p-3 rounded-lg text-white font-bold" id="search">Search</button>
+      </div>
+
+      <!-- CONTENT -->
+      <div class="content dark bg-Darkbluedarker rounded-xl mt-8 p-2 pt-6 flex flex-col sm:h-4/5 sm:pt-2  md:grid md:grid-rows-4 md:grid-cols-3">
+
+        <!-- Content Header -->
+        <div class="top flex gap-2 md:col-span-full">
+
+          <div class="image w-1/3 p-2 flex justify-center items-center md:h-[184px] md:mt-8">
+            <img src="./assets/octocat.png" class="rounded-full h-4/5 md:h-full " id="avatar">
+          </div>
+
+          <div class="top-content flex flex-col w-1/2 justify-center sm:gap-2 md:flex-row  md:w-auto md:justify-between md:items-center md:col-start-2 md:col-end-4 md:gap-28">
+            
+            <div class="leading-9">
+              <h2 class="text-xl font-bold sm:text-2xl dark" id="name">The Octocat</h2>
+              <h2 class="font-bold text-Blue sm:text-lg" id="gitUsername">@octocat</h2>
+            </div>
+
+            <div class="">
+              <h2 id="joined" class="dark">Joined 25 Jan 2011</h2>
+            </div>
+            
+          </div>
+
+        </div>
+
+        <!-- BIO -->
+        <div class="py-6 pl-6 pr-4 md:col-start-2 md:col-end-4 md:py-0 md:pl-0 md:pr-0 md:h-5/6">
+          <p id="bio" class="w-full md:relative md:top-2 dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id ea te labore possimus.</p>
+        </div>
+
+        <!-- PUBLIC DATA (FOLLOWERS, FOLLOWING, REPOSITRY) -->
+        <div id="publicData" class="bg-Verydarkbluedarker dark p-4 grid grid-rows-2 grid-cols-3 rounded-xl w-[95%] self-start gap-0 md:col-start-2 md:col-end-4 md:relative md:-top-4 ">
+          <h3 class="publicHeadings text-sm text-center dark">Repos</h3>
+          <h3 class="publicHeadings text-sm text-center dark">Followers</h3>
+          <h3 class="publicHeadings text-sm text-center dark">Following</h3>
+          <h2 class="text-center text-white font-bold dark" id="repo">8</h2>
+          <h2 class="text-center text-white font-bold dark" id="followers">3938</h2>
+          <h2 class="text-center text-white font-bold dark" id="following">9</h2>
+        </div>
+
+        <!-- SOCIAL HANDLES -->
+        <div class="socials dark flex flex-col p-4 mt-6 mb-8 sm:grid sm:grid-rows-2 sm:grid-cols-2  md:col-start-2 md:col-end-4 md:mt-0 md:mb-0 md:relative md:-top-6 md:p-0  right-3">
+
+          <!-- Location -->
+          <div class="flex gap-4 p-2 md:p-0">
+            <img src="./assets/icon-location.svg" alt="" class="h-6">  
+            <h3 id="location" class="text-lg">San Fransisco</h3>
+          </div>
+
+          <!-- Twitter -->
+          <div class="flex gap-4 p-2  md:p-0">
+            <img src="./assets/icon-twitter.svg" alt="" class="h-6">
+            <h3 class=""><a href="#" id="twitter">Not Available</a></h3>
+          </div>
+
+          <!-- Blog -->
+          <div class="flex gap-4 p-2 overflow-hidden text-ellipsis xl:h-10">
+            <img src="./assets/icon-website.svg" alt="" class="h-6 ">
+            <h3 class="text-lg md:p-0 "><a href="#" id="blog" class="">Blog</a></h3>
+          </div>
+
+          <!-- Company -->
+          <div class="flex gap-4 p-2  md:p-0">
+            <img src="./assets/icon-company.svg" alt="">
+            <h3 class="text-lg self-center" id="company">@github</h3>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
